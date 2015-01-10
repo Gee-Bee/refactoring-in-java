@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 
 public class TaxCalculator {
-	
 	public static double podstawa = 0;
 	public static char umowa = ' ';
 	// składki na ubezpieczenia społeczne
