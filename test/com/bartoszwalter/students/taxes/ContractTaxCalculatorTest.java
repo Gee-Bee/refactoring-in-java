@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ZlecenieTaxCalculator {
+public class ContractTaxCalculatorTest {
 
 	@Test
 	public void testObliczZaliczke() {
