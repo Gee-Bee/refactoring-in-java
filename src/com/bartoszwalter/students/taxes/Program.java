@@ -16,9 +16,17 @@ public class Program {
 			
 			System.out.print("Typ umowy: (P)raca, (Z)lecenie: ");
 			char umowa = br.readLine().charAt(0);
-			
-			TaxCalculator taxCalculator = new TaxCalculator(podstawa, umowa);
-			taxCalculator.print();
+			switch (umowa) {
+			case 'P':
+				(new EmploymentTaxCalculator(podstawa)).print();
+				break;
+			case 'Z':
+				(new ContractTaxCalculator(podstawa)).print();
+				break;
+			default:
+				System.out.println("Nieznany typ umowy!");
+				break;
+			}
 			
 		} catch (Exception ex) {
 			System.out.println("Błędna kwota");
